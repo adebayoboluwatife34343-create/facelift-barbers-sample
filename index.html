@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Facelift Barbers | 122 Wicker, Sheffield</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--card:#141414;--line:#262626;--neon:#39ff88;--pink:#ff2bd6;--txt:#f4f4f4;--mut:#9a9a9a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:Inter,sans-serif;line-height:1.55;overflow-x:hidden;padding-bottom:70px}
+a{color:inherit;text-decoration:none}
+.sample{background:var(--neon);color:#000;text-align:center;font-weight:800;font-size:.8rem;padding:6px;letter-spacing:.05em}
+nav{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;background:rgba(10,10,10,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-family:Anton;font-size:1.6rem;letter-spacing:.06em}
+.logo span{color:var(--neon);text-shadow:0 0 12px var(--neon)}
+nav .links a{margin-left:22px;font-weight:600;color:var(--mut);font-size:.9rem}
+nav .links a:hover{color:var(--neon)}
+@media(max-width:760px){nav .links{display:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:40px;font-weight:800;border:2px solid var(--neon);transition:.25s;cursor:pointer}
+.btn.fill{background:var(--neon);color:#000;box-shadow:0 0 20px rgba(57,255,136,.45)}
+.btn.fill:hover{transform:translateY(-3px);box-shadow:0 0 35px rgba(57,255,136,.8)}
+.btn.ghost{color:var(--neon)}
+.btn.ghost:hover{background:var(--neon);color:#000}
+.btn.wa{background:#25d366;border-color:#25d366;color:#000}
+header{min-height:88vh;display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:30px;padding:40px 5vw;position:relative;overflow:hidden}
+@media(max-width:860px){header{grid-template-columns:1fr;text-align:center}}
+header:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 60px,rgba(255,255,255,.025) 60px 61px);pointer-events:none}
+.tag{display:inline-block;border:1px solid var(--pink);color:var(--pink);padding:5px 14px;border-radius:30px;font-size:.8rem;font-weight:800;letter-spacing:.1em;margin-bottom:18px;animation:flick 4s infinite}
+@keyframes flick{0%,92%,100%{opacity:1}93%,96%{opacity:.3}}
+h1{font-family:Anton;font-size:clamp(3.2rem,9vw,7rem);line-height:.95;text-transform:uppercase}
+h1 .fade{display:block;background:linear-gradient(180deg,#fff 0%,#fff 35%,#555 100%);-webkit-background-clip:text;color:transparent}
+h1 .neon{color:var(--neon);text-shadow:0 0 10px var(--neon),0 0 40px var(--neon)}
+header p{color:var(--mut);font-size:1.1rem;margin:20px 0 28px;max-width:520px}
+@media(max-width:860px){header p{margin-inline:auto}}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+@media(max-width:860px){.ctas{justify-content:center}}
+.stars{margin-top:26px;font-weight:600;color:var(--mut)}.stars b{color:#ffd400}
+/* clipper */
+.clip-wrap{position:relative;height:420px;display:flex;align-items:center;justify-content:center}
+.clipper{width:120px;height:300px;position:relative;animation:buzz .12s infinite alternate, glide 5s ease-in-out infinite}
+@keyframes buzz{from{transform:translateX(-1px) rotate(-12deg)}to{transform:translateX(1px) rotate(-12deg)}}
+@keyframes glide{0%,100%{margin-top:-40px}50%{margin-top:40px}}
+.body{position:absolute;bottom:0;width:120px;height:240px;border-radius:30px 30px 50px 50px;background:linear-gradient(90deg,#1c1c1c,#3a3a3a 45%,#1c1c1c);border:2px solid #444;box-shadow:0 0 40px rgba(57,255,136,.25)}
+.body:after{content:"FACELIFT";position:absolute;top:110px;left:50%;transform:translateX(-50%) rotate(-90deg);font-family:Anton;color:var(--neon);letter-spacing:.2em;font-size:.9rem;text-shadow:0 0 8px var(--neon)}
+.switch{position:absolute;top:60px;left:50%;transform:translateX(-50%);width:26px;height:44px;border-radius:14px;background:#111;border:2px solid var(--neon)}
+.blade{position:absolute;top:0;left:10px;width:100px;height:62px;background:linear-gradient(180deg,#ddd,#888);border-radius:8px 8px 4px 4px}
+.blade:before{content:"";position:absolute;top:-10px;left:4px;right:4px;height:14px;background:repeating-linear-gradient(90deg,#ccc 0 4px,transparent 4px 8px);animation:teeth .08s infinite linear}
+@keyframes teeth{to{background-position:8px 0}}
+.hair{position:absolute;width:3px;height:12px;background:#ddd;border-radius:2px;opacity:0;animation:fall 2.4s infinite}
+@keyframes fall{0%{opacity:1;transform:translate(0,0) rotate(0)}100%{opacity:0;transform:translate(var(--x),220px) rotate(260deg)}}
+.ring{position:absolute;width:320px;height:320px;border-radius:50%;border:2px dashed rgba(255,43,214,.4);animation:spin 18s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* marquee */
+.marquee{background:var(--neon);color:#000;overflow:hidden;white-space:nowrap;padding:12px 0;font-family:Anton;font-size:1.4rem;letter-spacing:.08em;transform:rotate(-1.5deg);margin:10px -10px}
+.marquee div{display:inline-block;animation:mq 22s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:80px 5vw}
+h2{font-family:Anton;font-size:clamp(2.2rem,5vw,3.6rem);text-transform:uppercase;margin-bottom:10px}
+h2 span{color:var(--neon)}
+.sub{color:var(--mut);margin-bottom:40px;max-width:620px}
+.reveal{opacity:0;transform:translateY(40px);transition:.8s}
+.reveal.in{opacity:1;transform:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;position:relative;overflow:hidden;cursor:pointer;transition:.3s}
+.svc:before{content:"";position:absolute;left:0;bottom:0;width:100%;height:0;background:linear-gradient(0deg,rgba(57,255,136,.18),transparent);transition:.4s}
+.svc:hover{border-color:var(--neon);transform:translateY(-6px)}
+.svc:hover:before{height:100%}
+.svc .ic{font-size:2rem}
+.svc h3{font-size:1.25rem;margin:12px 0 6px}
+.svc p{color:var(--mut);font-size:.95rem}
+.svc .price{margin-top:14px;font-weight:800;color:var(--neon)}
+.svc .go{margin-top:10px;font-size:.85rem;color:var(--pink);font-weight:700}
+/* fade scale */
+.scale{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.scale button{flex:1;min-width:70px;padding:16px 6px;background:var(--card);border:1px solid var(--line);color:var(--txt);border-radius:12px;font-family:Anton;font-size:1.3rem;cursor:pointer;transition:.2s}
+.scale button.on,.scale button:hover{background:var(--neon);color:#000;border-color:var(--neon)}
+.scale-out{margin-top:18px;background:var(--card);border-left:4px solid var(--neon);padding:18px;border-radius:8px;color:var(--mut);min-height:60px}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.rev .st{color:#ffd400;letter-spacing:2px}
+.rev p{margin:10px 0;font-style:italic}
+.rev small{color:var(--mut)}
+.big{display:flex;gap:30px;flex-wrap:wrap;margin-bottom:30px}
+.big div{font-family:Anton;font-size:3.4rem;color:var(--neon);text-shadow:0 0 18px rgba(57,255,136,.5)}
+.big small{display:block;font-family:Inter;font-size:.85rem;color:var(--mut);text-shadow:none}
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:24px}
+@media(max-width:860px){.visit{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:18px;overflow:hidden}
+td{padding:13px 18px;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right;font-weight:600}
+tr.today{background:rgba(57,255,136,.12)}tr.today td:first-child:after{content:"  TODAY";color:var(--neon);font-size:.7rem;font-weight:800}
+.status{margin-top:14px;font-weight:800}
+iframe{width:100%;height:100%;min-height:340px;border:0;border-radius:18px;filter:invert(.9) hue-rotate(180deg)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.ph{aspect-ratio:1;border:2px dashed var(--line);border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--mut);font-size:.85rem;text-align:center;padding:10px;transition:.3s}
+.ph:hover{border-color:var(--pink);color:var(--pink)}
+footer{padding:40px 5vw;border-top:1px solid var(--line);color:var(--mut);text-align:center;font-size:.9rem}
+footer .mk{display:inline-block;margin-top:12px;border:1px solid var(--neon);color:var(--neon);padding:6px 14px;border-radius:30px;font-weight:700}
+.bar{position:fixed;bottom:0;left:0;right:0;display:flex;z-index:60}
+.bar a{flex:1;text-align:center;padding:16px;font-weight:800}
+.bar .c{background:var(--neon);color:#000}.bar .w{background:#25d366;color:#000}
+@media(min-width:861px){.bar{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<div class="sample">SAMPLE DESIGN BY LEADSKY LIMITED &middot; PREVIEW ONLY</div>
+<nav>
+  <a href="#" class="logo">FACE<span>LIFT</span></a>
+  <div class="links"><a href="#services">Services</a><a href="#fade">Fade Guide</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></div>
+  <a href="https://wa.me/447383274777" class="btn wa" style="padding:9px 16px;font-size:.85rem">WhatsApp</a>
+</nav>
+
+<header>
+  <div>
+    <div class="tag">122 WICKER &middot; SHEFFIELD S3</div>
+    <h1><span class="fade">Sharp fades.</span><span class="neon">Fresh face.</span></h1>
+    <p>Facelift Barbers on the Wicker. Skilled barbers, a friendly crew and a shop where, as one customer put it, "you go in as a stranger and leave as a friend." Open 7 days a week.</p>
+    <div class="ctas">
+      <a href="tel:+447383274777" class="btn fill">&#9742; Call 07383 274777</a>
+      <a href="https://wa.me/447383274777?text=Hi%20Facelift%20Barbers%2C%20I%27d%20like%20to%20book%20a%20cut" class="btn ghost">&#128172; WhatsApp us</a>
+    </div>
+    <div class="stars"><b>&#9733;&#9733;&#9733;&#9733;&#9733;</b> 4.6 from 56 Google reviews</div>
+  </div>
+  <div class="clip-wrap" id="clip">
+    <div class="ring"></div>
+    <div class="clipper"><div class="body"><div class="switch"></div></div><div class="blade"></div></div>
+  </div>
+</header>
+
+<div class="marquee"><div>SKIN FADES &#10022; BEARD TRIMS &#10022; HOT TOWEL SHAVES &#10022; KIDS' CUTS &#10022; AFRO HAIR &#10022; OPEN 7 DAYS &#10022; SKIN FADES &#10022; BEARD TRIMS &#10022; HOT TOWEL SHAVES &#10022; KIDS' CUTS &#10022; AFRO HAIR &#10022; OPEN 7 DAYS &#10022;&nbsp;</div></div>
+
+<section id="services">
+  <div class="reveal">
+    <h2>The <span>Menu</span></h2>
+    <p class="sub">Tap a service to book it on WhatsApp. Prices are placeholders until the shop confirms them.</p>
+  </div>
+  <div class="grid">
+    <div class="svc reveal" data-s="Haircut"><div class="ic">&#9986;</div><h3>Haircuts</h3><p>Classic cuts and modern styles, shaped to how you want it.</p><div class="price">&pound;[price]</div><div class="go">Book on WhatsApp &rarr;</div></div>
+    <div class="svc reveal" data-s="Fade"><div class="ic">&#9889;</div><h3>Fades</h3><p>Skin, low, mid and high fades, blended clean.</p><div class="price">&pound;[price]</div><div class="go">Book on WhatsApp &rarr;</div></div>
+    <div class="svc reveal" data-s="Beard trim"><div class="ic">&#129492;</div><h3>Beard Trim and Line-up</h3><p>Shape, line and tidy so the whole look is finished.</p><div class="price">&pound;[price]</div><div class="go">Book on WhatsApp &rarr;</div></div>
+    <div class="svc reveal" data-s="Shave"><div class="ic">&#129682;</div><h3>Shave</h3><p>A proper shave with a professional touch.</p><div class="price">&pound;[price]</div><div class="go">Book on WhatsApp &rarr;</div></div>
+    <div class="svc reveal" data-s="Children's haircut"><div class="ic">&#11088;</div><h3>Children's Haircut</h3><p>Cuts for the young ones, done with patience.</p><div class="price">&pound;[price]</div><div class="go">Book on WhatsApp &rarr;</div></div>
+    <div class="svc reveal" data-s="Afro hair"><div class="ic">&#128150;</div><h3>Afro Hair</h3><p>Barbers who know Afro hair and treat it right.</p><div class="price">&pound;[price]</div><div class="go">Book on WhatsApp &rarr;</div></div>
+  </div>
+</section>
+
+<section id="fade" style="background:#0f0f0f">
+  <div class="reveal">
+    <h2>Pick your <span>grade</span></h2>
+    <p class="sub">Not sure what to ask for? Tap a clipper guard to see what it means.</p>
+  </div>
+  <div class="scale reveal" id="scale">
+    <button data-g="0">0</button><button data-g="1">1</button><button data-g="2">2</button><button data-g="3">3</button><button data-g="4">4</button><button data-g="6">6</button><button data-g="8">8</button>
+  </div>
+  <div class="scale-out reveal" id="scaleOut">Tap a number above.</div>
+</section>
+
+<section id="reviews">
+  <div class="reveal">
+    <h2>What the <span>chair</span> says</h2>
+  </div>
+  <div class="big reveal">
+    <div><span class="count" data-to="4.6" data-dec="1">0</span><small>Google rating</small></div>
+    <div><span class="count" data-to="56">0</span><small>Google reviews</small></div>
+    <div><span class="count" data-to="7">0</span><small>days a week</small></div>
+  </div>
+  <div class="reviews">
+    <div class="rev reveal"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Still the best, these guys have pure talent. Me and my family drive all the way from Barnsley, have tried the rest, they still come tops."</p><small>Google review</small></div>
+    <div class="rev reveal"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Very good barbers... was the best cut I've had... definitely my new barber."</p><small>Google review</small></div>
+    <div class="rev reveal"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"The barber was so good and I had a nice experience. He didn't only barb but also treat my hair well. I highly recommend."</p><small>Google review</small></div>
+    <div class="rev reveal"><div class="st">&#9733;&#9733;&#9733;&#9733;</div><p>"Excellent quality barbers, the barbers are gifted."</p><small>Google review</small></div>
+  </div>
+</section>
+
+<section style="background:#0f0f0f">
+  <div class="reveal"><h2>Fresh <span>cuts</span></h2><p class="sub">Space for the shop's own photos of fades, line-ups and beards.</p></div>
+  <div class="gallery">
+    <div class="ph reveal">Your fade photo here</div><div class="ph reveal">Your beard photo here</div><div class="ph reveal">Your line-up photo here</div><div class="ph reveal">Your shop photo here</div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="reveal"><h2>Pull up <span>on the Wicker</span></h2><p class="sub">122 Wicker, Sheffield S3 8JD. Walk-ins welcome, or message ahead on WhatsApp.</p></div>
+  <div class="visit">
+    <div class="reveal">
+      <table id="hours">
+        <tr data-d="1"><td>Monday</td><td>10am to 8pm</td></tr>
+        <tr data-d="2"><td>Tuesday</td><td>10am to 8pm</td></tr>
+        <tr data-d="3"><td>Wednesday</td><td>10am to 8pm</td></tr>
+        <tr data-d="4"><td>Thursday</td><td>10am to 8pm</td></tr>
+        <tr data-d="5"><td>Friday</td><td>10am to 8pm</td></tr>
+        <tr data-d="6"><td>Saturday</td><td>11am to 8pm</td></tr>
+        <tr data-d="0"><td>Sunday</td><td>11:30am to 7:30pm</td></tr>
+      </table>
+      <div class="status" id="status"></div>
+      <div class="ctas" style="margin-top:18px">
+        <a href="tel:+447383274777" class="btn fill">&#9742; Call</a>
+        <a href="https://wa.me/447383274777" class="btn wa">&#128172; WhatsApp</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=122+Wicker+Sheffield+S3+8JD" target="_blank" class="btn ghost">Directions</a>
+      </div>
+    </div>
+    <div class="reveal"><iframe src="https://www.google.com/maps?q=Facelift+Barbers,+122+Wicker,+Sheffield+S3+8JD&output=embed" loading="lazy" title="Map to Facelift Barbers"></iframe></div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo" style="margin-bottom:8px">FACE<span style="color:var(--neon)">LIFT</span> BARBERS</div>
+  122 Wicker, Sheffield S3 8JD &middot; <a href="tel:+447383274777">07383 274777</a><br>
+  <span class="mk">Sample design by LeadSky Limited</span>
+</footer>
+
+<div class="bar"><a class="c" href="tel:+447383274777">&#9742; Call</a><a class="w" href="https://wa.me/447383274777">&#128172; WhatsApp</a></div>
+
+<script>
+// hair clippings
+const cw=document.getElementById('clip');
+setInterval(()=>{const h=document.createElement('div');h.className='hair';h.style.left=(45+Math.random()*12)+'%';h.style.top='38%';h.style.setProperty('--x',(Math.random()*160-80)+'px');h.style.background=Math.random()>.5?'#ddd':'#39ff88';cw.appendChild(h);setTimeout(()=>h.remove(),2400)},120);
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll&&e.target.querySelectorAll('.count').forEach(run);io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+function run(c){if(c.done)return;c.done=1;const to=+c.dataset.to,d=+(c.dataset.dec||0);let t=0;const iv=setInterval(()=>{t+=1/40;if(t>=1){t=1;clearInterval(iv)}c.textContent=(to*t).toFixed(d)},30)}
+// services to WhatsApp
+document.querySelectorAll('.svc').forEach(s=>s.onclick=()=>window.open('https://wa.me/447383274777?text='+encodeURIComponent('Hi Facelift Barbers, I would like to book: '+s.dataset.s),'_blank'));
+// grades
+const G={0:'Grade 0: no guard, right down to the skin. Used for skin fades.',1:'Grade 1: about 3mm. Very short, a clean faded look.',2:'Grade 2: about 6mm. Short and neat all over.',3:'Grade 3: about 10mm. Short with a bit of hair left.',4:'Grade 4: about 13mm. A tidy, natural short cut.',6:'Grade 6: about 19mm. Longer on top or a soft all-over.',8:'Grade 8: about 25mm. The longest standard guard.'};
+document.querySelectorAll('#scale button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#scale button').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.getElementById('scaleOut').textContent=G[b.dataset.g]+' Ask your barber, or WhatsApp us your grade before you come.'});
+// today + open status (UK time)
+const uk=new Date(new Date().toLocaleString('en-US',{timeZone:'Europe/London'}));const d=uk.getDay(),m=uk.getHours()*60+uk.getMinutes();
+document.querySelector('#hours tr[data-d="'+d+'"]').classList.add('today');
+const H={0:[690,1170],6:[660,1200]};const [o,c]=H[d]||[600,1200];
+document.getElementById('status').innerHTML=(m>=o&&m<c)?'<span style="color:var(--neon)">&#9679; Open now</span>':'<span style="color:var(--pink)">&#9679; Closed now</span>';
+</script>
+</body>
+</html>
